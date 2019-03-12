@@ -99,8 +99,8 @@ public class StatementApiExample {
 			// final String SELECT_QUERY = "INSERT INTO Emp Values ('" + Name + "','" +
 			// LAstName + "','" + Address + "','"
 			// + Pin + "','" + ID + "');";
-			final String SELECT_QUERY = "DELETE FROM Emp WHERE Empname='" + b + "'";
-			int resultSetCount = statement.executeUpdate(SELECT_QUERY);
+			final String DELETE_QUERY = "DELETE FROM Emp WHERE Empname='" + b + "'";
+			int resultSetCount = statement.executeUpdate(DELETE_QUERY);
 			System.out.println(resultSetCount);
 
 		} catch (SQLException e) {

@@ -18,19 +18,17 @@ public class RegisterProduct {
 			try {
 				System.out.println("in try db");
 				Class.forName("com.mysql.jdbc.Driver");
-				 connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/products","root","rootroot");
+				 connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Product","root","rootroot");
 				 System.out.println("end try db");
-			} catch (ClassNotFoundException e1) {
+			} catch (Exception e1) {
 				System.out.println("Exception");
 				e1.printStackTrace();
 			}
 		
-			
-            
 			try {
 				//connection.setAutoCommit(false);
 				System.out.println("Database ma avi ne gayu chhe");
-				final String INSERT_QUERY = "INSERT INTO products VALUES(?,?,?)";
+				final String INSERT_QUERY = "INSERT INTO products (name, price, seller) VALUES(?,?,?)";
 				prstatement = connection.prepareStatement(INSERT_QUERY);
 				prstatement.setString(1, productmodel.getProductname());
 				prstatement.setDouble(2, productmodel.getProductprice());

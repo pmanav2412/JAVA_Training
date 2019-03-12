@@ -1,0 +1,14 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>  
+    <jsp-version>2.0</jsp-version> 
+    <tag>  
+	<name>DateFormate</name>  
+	<tag-class>com.marlabs.taglib.DateFormate</tag-class>  
+	<body-content>empty</body-content>
+	  <attribute>
+         <name>inputDateFormate</name>
+         <requred>true</requred>
+         <rtexprvalue>true</rtexprvalue>
+      </attribute>
+	</tag>   
+</taglib>

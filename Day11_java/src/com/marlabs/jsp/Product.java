@@ -2,9 +2,9 @@ package com.marlabs.jsp;
 
 public class Product {
 
-	private String name;
-	private double price;
-	private String seller;
+	 String name;
+	 double price;
+	 String seller;
 
 	public String getName() {
 		return name;

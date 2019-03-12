@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,13 +12,14 @@
 <jsp:useBean id= "Product" class="com.marlabs.jsp.Product" />
 <jsp:setProperty property="*" name="Product"/>
 <%
+System.out.print(Product.getName()+ " "+ Product.getPrice()+ " "+ Product.getSeller());
 boolean b =Services.indertData(Product);
 %>
 <%= 
 b
 %>
 <% 
-response.sendRedirect("index.html");
+response.sendRedirect("jstl_sql_allData.jsp");
 %>
 
 </body>

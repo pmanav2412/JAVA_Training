@@ -13,8 +13,8 @@ public class ProductServices {
 
 		Boolean flag = false;
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Product", "root", "rootroot");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Product?useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "rootroot");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

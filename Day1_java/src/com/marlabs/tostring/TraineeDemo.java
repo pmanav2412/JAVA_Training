@@ -8,7 +8,9 @@ public class TraineeDemo {
 		System.out.println(t.toString());
 		MarlabsTrainee t1 = new MarlabsTrainee(23, "Ravi");
 		System.out.println(t1);
-
+     
+      System.out.println();
+      System.out.println();
 		System.out.println("main methode ends......");
 	}
 
